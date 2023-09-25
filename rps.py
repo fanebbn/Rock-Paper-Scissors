@@ -1,3 +1,4 @@
+
 import random
 import sys
 
@@ -93,7 +94,7 @@ class Game():
                     print('You lost this round!')
                     print()
                     lose += 1
-            game.score(win, lose)
+            self.score(win, lose)
                 #print('as')
                 #tuple = (move1, move2)
                 #for j, k in dict.items():
@@ -102,6 +103,17 @@ class Game():
             
     def score(self, win, lose):
         print('Final score: Human ', win, '-', lose, 'Computer')
+        self.replay()
+        
+
+    def replay(self):
+        ard = input('Do you still want to play? y/n ')
+        if ard == 'y':
+                self.play()
+        elif ard == 'n':
+                sys.exit()
+        else:
+            print('Sorry, only y or n')
         
         
         
@@ -162,5 +174,5 @@ class Game():
         
                 
                 
-game = Game()
-game.play()
+#game = Game()
+#game.play()
