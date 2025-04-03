@@ -1,1 +1,1 @@
-PROIECT MISTO
+Rock, Paper Scissors project
